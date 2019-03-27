@@ -1,0 +1,44 @@
+{
+  "generator-jhipster": {
+    "databaseType": "sql",
+    "devDatabaseType": "mysql",
+    "enableHibernateCache": true,
+    "enableSwaggerCodegen": false,
+    "enableTranslation": true,
+    "jhiPrefix": "jhi",
+    "languages": [
+      "en",
+      "fr"
+    ],
+    "messageBroker": false,
+    "nativeLanguage": "en",
+    "packageName": "manager.com.donviphathanh",
+    "packageFolder": "manager/com/donviphathanh",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "serviceDiscoveryType": "eureka",
+    "skipClient": true,
+    "testFrameworks": [],
+    "websocket": false,
+    "baseName": "donviphathanh",
+    "applicationType": "microservice",
+    "authenticationType": "jwt",
+    "buildTool": "maven",
+    "serverPort": "8082",
+    "skipUserManagement": true,
+    "jhipsterVersion": "5.8.2",
+    "clientPackageManager": "npm",
+    "cacheProvider": "hazelcast",
+    "jwtSecretKey": "MmYxMDc3NTk3NzQ5YmNlMTdmOWNhNmM1ZTM2YjFiNDkwNTAxOTY4NDY4NGNmMDUzYTVlNTMzZDlkYzgyZTYxNmUwYTAxY2E4ZDBlZDc4MGU3NTg1ZGFjMDJmMDRkZGQ1MWE1OTlhY2Q4ZTc0ZDNmY2E4NjllYThkYzAwNjJiMjA=",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": []
+  },
+  "entities": [
+    "MauPhatHanh",
+    "MauPhatHanhTieuChi",
+    "TieuChi",
+    "KyCongBo",
+    "TieuChiBaoCao"
+  ]
+}

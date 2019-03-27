@@ -1,0 +1,47 @@
+{
+    "name": "MauPhatHanhTieuChi",
+    "fields": [
+        {
+            "fieldName": "mauPhatHanhCode",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "tieuChiCode",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "tieuChi",
+            "otherEntityRelationshipName": "mauphathanhtieuchi",
+            "relationshipName": "tieuchi",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "mauPhatHanh",
+            "otherEntityRelationshipName": "mauphathanhtieuchi",
+            "relationshipName": "mauphathanh",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20190327160409",
+    "entityTableName": "mau_phat_hanh_tieu_chi",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": [
+        "gateway",
+        "donviphathanh"
+    ]
+}

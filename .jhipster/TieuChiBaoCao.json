@@ -1,0 +1,61 @@
+{
+    "name": "TieuChiBaoCao",
+    "fields": [
+        {
+            "fieldName": "tieuChiBaoCaoCode",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "tieuChiCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "nhomDanhMucCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "userName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "createTime",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "updateTime",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "status",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "program",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "tieuChi",
+            "otherEntityRelationshipName": "tieuchibaocao",
+            "relationshipName": "tieuchi",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20190327160412",
+    "entityTableName": "tieu_chi_bao_cao",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": [
+        "gateway",
+        "donviphathanh"
+    ]
+}

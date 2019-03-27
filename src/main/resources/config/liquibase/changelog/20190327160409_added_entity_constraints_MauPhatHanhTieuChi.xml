@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+    <!--
+        Added the constraints for entity MauPhatHanhTieuChi.
+    -->
+    <changeSet id="20190327160409-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="tieuchi_id"
+                                 baseTableName="mau_phat_hanh_tieu_chi"
+                                 constraintName="fk_mau_phat_hanh_tieu_chi_tieuchi_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="tieu_chi"/>
+
+        <addForeignKeyConstraint baseColumnNames="mauphathanh_id"
+                                 baseTableName="mau_phat_hanh_tieu_chi"
+                                 constraintName="fk_mau_phat_hanh_tieu_chi_mauphathanh_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="mau_phat_hanh"/>
+
+    </changeSet>
+</databaseChangeLog>
